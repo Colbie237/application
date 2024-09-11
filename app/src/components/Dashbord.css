@@ -1,0 +1,20 @@
+/* src/App.css ou src/components/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f5f7;
+    overflow-y: auto;
+  }
+  
+  .SideOp-contenair {
+    background-color: rgb(107, 79, 3);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }

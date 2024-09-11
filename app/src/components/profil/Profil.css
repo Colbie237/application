@@ -1,0 +1,26 @@
+/* src/pages/Profil.css */
+.profil-container {
+    position: relative;
+  }
+  
+  .slide-enter {
+    transform: translateY(100%); /* Commencer en bas */
+    opacity: 0; /* Transparence initiale */
+  }
+  
+  .slide-enter-active {
+    transform: translateY(0); /* Déplacer vers le haut */
+    opacity: 1; /* Devenir opaque */
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out; /* Transition de transformation et d'opacité */
+  }
+  
+  .slide-exit {
+    transform: translateY(0); /* Rester en place */
+    opacity: 1; /* Rester opaque */
+  }
+  
+  .slide-exit-active {
+    transform: translateY(100%); /* Sortir vers le bas */
+    opacity: 0; /* Devenir transparent */
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out; /* Transition de transformation et d'opacité */
+  }

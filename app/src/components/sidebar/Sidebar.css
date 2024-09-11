@@ -1,0 +1,35 @@
+/* src/components/Sidebar.css */
+.sidebar-container {
+  background-color: #4a4e69; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 15px; /* Espacement intérieur */
+  border-radius: 8px; /* Coins arrondis */
+  width: 70px; /* Largeur fixe */
+  height: 100vh; /* Prendre toute la hauteur de l'écran */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+  margin-top:4.2%;
+}
+
+.sidebar-container h2 {
+  margin-bottom: 20px; /* Espacement en bas du titre */
+  text-align: center; /* Centrer le titre */
+}
+
+.sidebar-item {
+  display: flex; /* Utiliser flex pour aligner les icônes et le texte */
+  align-items: center; /* Centrer verticalement */
+  margin: 10px 0; /* Espacement vertical entre les éléments */
+  cursor: pointer; /* Curseur pointer pour l'interaction */
+  transition: background 0.3s; /* Transition pour l'effet de survol */
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Coins arrondis pour chaque élément */
+}
+
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Changement de couleur au survol */
+}
+
+.sidebar-icon {
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+  font-size: 24px; /* Taille de l'icône */
+}

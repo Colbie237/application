@@ -1,0 +1,46 @@
+.alerts-container {
+  padding: 20px;
+  background-color: #f0f4f8; /* Couleur de fond douce */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Largeur maximale pour un bon rendu */
+  margin: auto; /* Centrer horizontalement */
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Centrer le titre */
+}
+
+.alerts-section {
+  margin-bottom: 30px; /* Espacement entre les sections */
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.2s; /* Animation légère */
+}
+
+.alert:hover {
+  transform: translateY(-2px); /* Effet de levée au survol */
+}
+
+.performance-alert {
+  background-color: #ffe5e5; /* Rouge clair */
+  color: #c0392b; /* Rouge pour le texte */
+  border-left: 5px solid #c0392b; /* Bord gauche coloré */
+}
+
+.maintenance-alert {
+  background-color: #e6f7ff; /* Bleu clair */
+  color: #0056b3; /* Bleu pour le texte */
+  border-left: 5px solid #0056b3; /* Bord gauche coloré */
+}
+
+h3 {
+  color: #555; /* Couleur des sous-titres */
+  margin-bottom: 10px; /* Espacement */
+}

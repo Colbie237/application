@@ -1,0 +1,118 @@
+/* src/components/MainDas.css */
+.main-container {
+  display: flex; /* Utiliser flex pour un agencement horizontal */
+  flex-direction: column; /* Aligner les éléments en colonne */
+
+ 
+}
+
+.right-side {
+  margin-bottom: 20px; /* Ajoute un espace entre RightSide et le reste */
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.content-container {
+  display: flex; /* Utiliser flex pour aligner les cartes et Meteo */
+  flex-direction: row; /* Alignement horizontal */
+}
+
+.cards-container {
+  display: grid; /* Gardez la grille pour les cartes */
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les cartes */
+  gap: 20px;
+  flex: 3; /* Prend une proportion plus grande de l'espace */
+  margin-bottom: 20px; /* Espacement en bas des cartes */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px; /* Réduit le padding de la carte */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation de l'ombre */
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  height: 150px; /* Hauteur fixe pour les cartes */
+  position: relative; /* Pour positionner le texte du pourcentage */
+  padding: 15px; /* Réduit le padding de la carte */
+
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.card h6 {
+  margin: 0 0 10px;
+  font-size: 1em; /* Réduit la taille du titre */
+  font-weight: 600;
+}
+
+.card .MuiCircularProgress-root {
+  margin: 10px 0; /* Réduit l'espacement autour de la barre de progression */
+}
+
+.card h4 {
+  font-size: 1.2em; /* Réduit la taille de la valeur */
+  color: #333;
+  margin: 5px 0; /* Réduit l'espacement */
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #666; 
+}
+
+
+.chart-container {
+  margin-top: 20px; /* Espacement au-dessus du graphique */
+  display: flex;
+  justify-content: center; /* Centrer le graphique */
+}
+/* src/components/MainDash.css */
+.main-container {
+  display: flex; /* Utiliser flex pour un agencement horizontal */
+  padding: 20px;
+}
+
+.right-side {
+  flex: 1; /* Prend une proportion de l'espace disponible */
+  margin-right: 20px; /* Ajoute un espace entre RightSide et le reste */
+}
+
+.content-container {
+  flex: 3; /* Prend une proportion plus grande de l'espace */
+  display: flex;
+  flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.chart-row {
+
+  justify-content: center; /* Centrer le graphique */
+  align-items: end;
+  justify-content: end;
+margin-top:23%;
+margin-left: 43%;
+position: absolute;
+
+}
+
+.chart-container {
+  width: 100%; /* Prendre toute la largeur disponible */
+  max-width: 500px; /* Limiter la largeur maximale si nécessaire */
+
+}

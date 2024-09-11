@@ -1,0 +1,49 @@
+/* src/components/SideOp.css */
+.sideop-container {
+  display: flex; /* Utiliser flex pour aligner les éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Centrer verticalement */
+  background-color: #4a4e69; /* Couleur de fond harmonisée */
+  color: white;
+  padding: 15px 20px; /* Espacement intérieur */
+  border-radius: 8px; /* Coins arrondis */
+  margin-bottom: 20px; /* Espacement en bas */
+  width: 100%; /* Prendre toute la largeur de l'écran */
+  position: fixed; /* Fixer la barre en haut */
+  top: 0; /* Positionner en haut */
+  left: 0; /* Positionner à gauche */
+  z-index: 10; /* Assurez-vous qu'il soit au-dessus */
+}
+
+.heure, .date, .tmp {
+  margin: 0 10px; /* Espacement horizontal entre les éléments */
+  font-size: 1.2em; /* Taille de police */
+}
+
+.icons {
+  display: flex; /* Flex pour aligner les icônes horizontalement */
+}
+
+.icon {
+  cursor: pointer; /* Curseur pointer sur survol */
+  font-size: 24px; /* Taille des icônes */
+  margin: 0 10px; /* Espacement entre les icônes */
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+  color: white; /* Couleur du texte des sections */
+}
+
+/* Ajouter des styles responsives si nécessaire */
+@media (max-width: 768px) {
+  .sideop-container {
+    flex-direction: column; /* Passer à une colonne sur les petits écrans */
+    align-items: flex-start; /* Alignement à gauche */
+  }
+
+  .heure, .date, .tmp {
+    margin: 5px 0; /* Espacement vertical dans la colonne */
+  }
+}
